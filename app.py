@@ -18,14 +18,14 @@ def determine_winner(user_choice, comp_choice):
     else:
         return "Computer wins!"
 
-# Function to play sound
+# Function to play sound using URLs for hosted audio files
 def play_sound(sound_type):
     if sound_type == "win":
-        st.audio("win_sound.mp3")
+        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")  # Replace with actual win sound URL
     elif sound_type == "lose":
-        st.audio("lose_sound.mp3")
+        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")  # Replace with actual lose sound URL
     else:
-        st.audio("tie_sound.mp3")
+        st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3")  # Replace with actual tie sound URL
 
 # Function to load leaderboard from CSV
 def load_leaderboard():
